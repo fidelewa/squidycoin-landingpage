@@ -22,22 +22,11 @@ body
     background: rgba(161, 161, 161, 0.479);
     height: 6057px;
     padding-top: 10px;
-    /* background-color: peru; */
 }
 
 /* Header */
 
-/* @media all and (max-width: 991px)
-{
-    #header
-    {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-} */
-
+/* OK */
 header h1
 {
     font-family: 'Lora', sans-serif;
@@ -47,6 +36,7 @@ header h1
     color: #1F1C4B;
 }
 
+/* OK */
 header h2
 {
     font-family: 'Open Sans', sans-serif;
@@ -56,53 +46,63 @@ header h2
     opacity: 0.6;
 }
 
+/* OK */
 #logo
 {
     display: flex;
     flex-direction: row;
     align-items: center;
-    /* border: 1px solid #1f0076; */
+    /* border: 1px solid #ff0015; */
 }
 
+/* OK */
 #logo_name_color{
     color:#4798A9;
 }
 
+/* OK */
 #slogan {
-    /* border: 1px solid #1f0076; */
+    /* border: 1px solid red; */
     margin-bottom:6px;
     text-align: center;
-    padding: 5px 0 5px 0;
+    padding: 5px 0;
 }
 
+/* OK */
 #phone h1, #phone h2, #location h1, #location h2{
     font-family: 'Roboto', sans-serif;
 }
 
+/* OK */
 #phone h1, #location h1 {
     font-weight: medium;
     font-size: 12pt;
 }
 
+/* OK */
 #phone h2, #location h2 {
     font-weight: regular;
     font-size: 11pt;
     opacity: 0.6;
 }
 
+/* OK */
 #titre_principal, #location, #phone, #logo{
     padding:0;
 }
 
+/* OK */
 #social_icons{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-@media all and (max-width: 991px){
-
-    #social_icons{
+@media all and (max-width: 991px)
+{
+    /* OK */
+    #social_icons
+    {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -110,6 +110,7 @@ header h2
 
 }
 
+/* OK */
 #fb_icon a{
     background:url('../assets/images/facebook.png');
     height:40px;
@@ -117,10 +118,12 @@ header h2
     display: flex;
 }
 
+/* OK */
 #fb_icon a:hover{
     background:url('../assets/images/facebook_selected.png');
 }
 
+/* OK */
 #twitter_icon a{
     background:url('../assets/images/twitter.png') no-repeat;
     height:40px;
@@ -128,10 +131,12 @@ header h2
     display: flex;
 }
 
+/* OK */
 #twitter_icon a:hover{
     background:url('../assets/images/twitter_green.png') no-repeat;
 }
 
+/* OK */
 #google_icon a{
     background:url('../assets/images/google_plus.png') no-repeat;
     height:40px;
@@ -139,10 +144,12 @@ header h2
     display: flex;
 }
 
+/* OK */
 #google_icon a:hover{
     background:url('../assets/images/google_green.png') no-repeat;
 }
 
+/* OK */
 #linkedin_icon a{
     background:url('../assets/images/linkedin.png') no-repeat;
     height:40px;
@@ -150,36 +157,43 @@ header h2
     display: flex;
 }
 
+/* OK */
 #linkedin_icon a:hover{
     background:url('../assets/images/linkedin_green.png') no-repeat;
 }
 
 /* Navigation */
 
+/* OK */
 nav ul
 {
     list-style-type: none;
-    padding:0;
+    padding:0; /*supprimer toutes les marges internes*/
 }
 
+/* OK */
 nav li
 {
     margin: 0;
     float:left; /*pour IE*/
+    /* border:1px solid rgb(255, 0, 21); */
 } 
 
+/* OK */
 nav a
 {
-    float:left;   
-    width:100px;
-    line-height:48px; 
+    float: left; /*pour IE*/
+    width:100px; /* Largeur des boutons */
+    line-height:48px;  /* Taille des boutons */
     color:rgb(0, 0, 0);
     text-align:center;
     font-size: 1.3em;
     font-weight: bold;
     text-transform: uppercase;
+    /* border:1px solid red; */
 }
 
+/* OK */
 nav a:hover
 {
     background:#1164AA;
@@ -187,19 +201,22 @@ nav a:hover
     text-decoration: none;
 }
 
+/* OK */
 nav a:focus {
     text-decoration:none;
 }
 
 /* Mettre le menu dans un carroussel à partir de cette largeur d'écran */
 
-@media all and (max-width: 399px)
+@media all and (max-width: 418px)
 {
+    /* OK */
     #menu
     {
         display: none;
     }
 
+    /* OK */
     #social_icons {
         padding-bottom:20px;
     }
@@ -207,21 +224,25 @@ nav a:focus {
 
 /* main banner */
 
+/* OK */
 #main_banner {
     height: 513px;
     background: url('../assets/images/squidycoin_logo.jpg') repeat-x center;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column
+    flex-direction: column;
+    /* border:1px solid red; */
 }
 
+/* OK */
 #main_banner h1:nth-child(1) {
     color:#59ce02;
     font-family: 'Lora', sans-serif;
     font-style: italic;
 }
 
+/* OK */
 #main_banner h1:nth-child(2) {
     color:#fff;
     font-family: 'Open Sans', sans-serif;
@@ -229,6 +250,7 @@ nav a:focus {
     font-weight: bold;
 }
 
+/* OK */
 #main_banner h1:nth-child(3) {
     color:#fff;
     font-family: 'Open Sans', sans-serif;
@@ -237,6 +259,7 @@ nav a:focus {
     text-transform: uppercase;
 }
 
+/* OK */
 #main_banner button {
     background-color: #52cd0e;
     border: none;
@@ -250,6 +273,7 @@ nav a:focus {
     font-weight: 500;
 }
 
+/* OK */
 #main_banner button a {
     color: white;
     text-decoration: none;
@@ -257,6 +281,7 @@ nav a:focus {
 
 @media all and (max-width: 601px)
 {
+    /* OK */
     #main_banner_2
     {
         display: none;
@@ -265,41 +290,52 @@ nav a:focus {
 
 /* What we do */
 
+/* OK */
 #what_we_do {
     text-align: center;
-    padding-bottom: 39px; /*modifié*/
+    padding-bottom: 39px;
+    /* border: 1px solid red; */
 }
 
+/* OK */
 #what_we_do h1:nth-child(1) {
     font-weight: bold;
 }
 
+/* OK */
 #what_we_do h1:nth-child(2) {
     font-weight: 900;
 }
 
+/* OK */
 #bloc {
     padding-top:10px;
+    /* border: 1px solid red; */
 }
 
+/* OK */
 #bloc h1{
     font-weight: 500;
     font-size: 15pt;
-    margin-top: 15px;
+    /* margin-top: 15px; */
+    /* border: 1px solid red; */
 }
 
+/* OK */
 #bloc p{
     text-align: justify;
     color:#fff;
     font-weight: 400;
 }
 
+/* OK */
 .bg_bar {
     background: url('../assets/images/bg_bar.png') no-repeat;
     margin-bottom: 25px;
     width: 220px;
 }
 
+/* OK */
 .button {
     background-color: #52cd0e;
     border: 2px solid #fff;
@@ -314,29 +350,28 @@ nav a:focus {
     text-transform: uppercase;
 }
 
+/* OK */
 .bg_bloc {
     background: url('../assets/images/green_shape_220w.png') no-repeat;
-    /* height: 170px; */
     width: 220px;
     padding-top: 35px;
 }
 
+/* OK */
 .bloc_icon{
     width: 220px
 }
 
 @media all and (max-width: 1199px)
 {
+    /* OK */
     #bloc
     {
         display: flex;
         flex-direction: column;
         align-items: center;
         flex-wrap: wrap;
-
-        /* display: flex;
-        flex-wrap: wrap;
-        justify-content: center; */
+        /* border:1px solid red; */
     }
 }
 
@@ -442,15 +477,18 @@ nav a:focus {
     /* border: 1px solid red; */
 }
 
+/* OK */
 #details h2 {
     font-weight: 500;
     font-size:20pt;
 }
 
+/* OK */
 #details p {
     font-weight: 400;
 }
 
+/* OK */
 .vh_center_img {
     padding: 9.5px 0px;
     display: flex;
@@ -461,18 +499,18 @@ nav a:focus {
 
 @media all and (max-width: 991px)
 {
+    /* OK */
     #rectangle
     {
         display: none;
     }
 
-    /* #details div{
+    /* OK */
+    #details div{
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: auto;
-    } */
-
+    }
 }
 
 /* Projects gallery */
